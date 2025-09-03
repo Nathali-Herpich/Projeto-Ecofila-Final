@@ -123,8 +123,8 @@ body {
 
 /* Sobre */
 .sobre {
-  padding: 60px 20px;
-  text-align: center; /* centraliza o título */
+  padding: 40px 20px;
+  text-align: center; 
 }
 
 .sobre h2 {
@@ -248,3 +248,4 @@ footer {
     font-size: 2rem;
   }
 }
+
