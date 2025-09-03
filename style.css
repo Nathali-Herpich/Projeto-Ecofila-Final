@@ -1,0 +1,250 @@
+@import url('https://fonts.cdnfonts.com/css/lostar');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Marcellus', serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color:#002f6d
+  color white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(1, 1, 59);
+  border-bottom: 2px solid #1c70a0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Lostar', serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3f991b;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+
+
+  background-color: #002f6d;
+
+  /* Imagem Ecofila */
+  background-image: url("Ecofila.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-overlay img {
+  max-width: 250px; 
+  border-radius: 100%; 
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.hero-content button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #33A8DB;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #1472B7;
+}
+
+.hero h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 20px; 
+  
+  color: white;
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #33A8DB;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #1472B7;
+}
+
+/* Sobre */
+.sobre {
+  padding: 60px 20px;
+  text-align: center; /* centraliza o título */
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #33A8DB;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sobre p {
+  max-width: 900px;     
+  margin: 0 auto;      
+  text-align: justify; 
+  line-height: 1.5;     
+  font-size: 1.2rem;
+  color: #050505;
+}
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Cards */
+.cards {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+.card {
+  background: #002f6d;
+  border: 1px solid #33A8DB80;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  color: white;
+  text-align: center;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #33A8DB;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background: #002f6d;
+  border: 1px solid #33A8DB80;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  color: white;
+}
+
+
+
+/* Contato */
+.contato {
+    color: white;
+  padding: 60px 20px;
+  text-align: center;
+  background: #002f6d;
+}
+
+.contato button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #33A8DB;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contato button:hover {
+  background: #1472B7;
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background:  rgb(1, 1, 59);;
+  border-top: 2px solid #33A8DB;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
